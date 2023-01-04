@@ -68,17 +68,17 @@ func sum(stn1 string, stn2 string) string {
 		if index1 >= 0 && index2 >= 0 && i != 0 {
 			temp1 = temp1 / 10
 			temp2 = temp2 / 10
-			fmt.Printf("Bước %d: Ta lấy %c cộng với %c cộng cho số nhớ là %d được %d nhớ %d \n", i+1, stn1[index1], stn2[index2], soNho, temp1%10+temp2%10+soNho, (temp1%10+temp2%10+soNho)/10)
+			fmt.Printf("Bước %d: Ta lấy %c cộng với %c và cộng cho số nhớ là %d được %d nhớ %d \n", i+1, stn1[index1], stn2[index2], soNho, temp1%10+temp2%10+soNho, (temp1%10+temp2%10+soNho)/10)
 			soNho = (temp1%10 + temp2%10 + soNho) / 10
 		}
 
 		if index1 < 0 {
 			temp2 = temp2 / 10
-			fmt.Printf("Bước %d: Ta lấy 0 cộng với %c cộng cho số nhớ là %d  được %d nhớ %d \n", i+1, stn2[index2], soNho, temp2%10+soNho, (temp2%10+soNho)/10)
+			fmt.Printf("Bước %d: Ta lấy 0 cộng với %c và cộng cho số nhớ là %d  được %d nhớ %d \n", i+1, stn2[index2], soNho, temp2%10+soNho, (temp2%10+soNho)/10)
 		}
 		if index2 < 0 {
 			temp1 = temp1 / 10
-			fmt.Printf("Bước %d: Ta lấy %c cộng với 0 cộng cho số nhớ là %d được %d\n", i+1, stn1[index1], soNho, temp1%10+soNho)
+			fmt.Printf("Bước %d: Ta lấy %c cộng với 0 và cộng cho số nhớ là %d được %d\n", i+1, stn1[index1], soNho, temp1%10+soNho)
 		}
 
 	}
