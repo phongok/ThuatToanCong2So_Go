@@ -35,8 +35,8 @@ func sum(stn1 string, stn2 string) string {
 		panic(err2)
 	}
 
-	var temp1 int // Độ dài chuổi 1
-	var temp2 int // Độ dài chuổi 2
+	var temp1 int //Chỉ số kí tự đang xét chuổi 1 bắt đầu cho lần chạy thứ 2
+	var temp2 int //Chỉ số kí tự đang xét chuổi 2 bắt đầu cho lần chạy thứ 2
 	temp1 = s1
 	temp2 = s2
 
@@ -45,8 +45,8 @@ func sum(stn1 string, stn2 string) string {
 	for i := 0; i < lenmax; i++ {
 		index1 = len1 - i - 1
 		index2 = len2 - i - 1
-		var d1 int //Chỉ số kí tự đang xét chuổi 2
-		var d2 int //Chỉ số kí tự đang xét chuổi 2
+		var d1 int //Chỉ số kí tự đang xét chuổi 1 cho lần chạy đầu
+		var d2 int //Chỉ số kí tự đang xét chuổi 2 cho lần chạy đầu
 
 		d1, err1 := strconv.Atoi(stn1)
 		if err1 != nil {
